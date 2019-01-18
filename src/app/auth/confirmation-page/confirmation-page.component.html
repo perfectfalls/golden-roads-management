@@ -1,0 +1,22 @@
+<div class="dashboard">
+  <div class="container">
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <div class="row">
+      <div class="col-md-12">
+        <div *ngIf="errors && errors.error" class="alert alert-danger" role="alert">
+          <i class="fa fa-exclamation-triangle fa-2x"></i>
+          <h4 class="alert-heading">Error!</h4>
+          <p>Ooops. Invalid token it seems.</p>
+        </div>
+        <div *ngIf="user && user.confirmed" class="alert alert-success" role="alert">
+          <i class="fa fa-check fa-2x"></i>
+          <h4 class="alert-heading">Success!</h4>
+          <p>
+            Thank you. Your account has been verified.
+            <a routerLink="/dashboard">Go to your dashboard</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

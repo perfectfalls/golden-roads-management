@@ -1,1 +1,475 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 10px;
+  font-family: Montserrat, sans-serif !important;
+}
+.navbar {
+  padding: 1.8rem 1.8rem !important;
+}
+
+h1 {
+  font-weight: 300 !important;
+}
+
+p {
+  color: #333 !important;
+}
+
+nav a {
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+#hero {
+  width: 100%;
+  height: 620px;
+  background-image: url("./assets/img/mathematical-finance.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: absolute;
+  top: 0; */
+}
+
+#hero-container {
+  background-color: rgba(0, 0, 0, 0.7); /*position:absolute;*/
+  width: 100%;
+  height: 100%;
+}
+#hero-head {
+  z-index: 2;
+  position: absolute;
+}
+.hero-content {
+  position: absolute;
+}
+#hero-content {
+  z-index: 1;
+}
+
+#hero-content h1:nth-of-type(1) {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 4.5vw;
+}
+
+#hero-content h1:nth-of-type(2) {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 2.375rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 480px;
+  }
+
+  #hero-content h1:nth-of-type(2) {
+    font-size: 1.475rem;
+    margin-top: 2rem;
+  }
+
+  #hero-content button {
+    width: 200px !important;
+    padding: 25px 35px !important;
+    margin-top: 6rem !important;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.6rem !important;
+  }
+
+  #services-heading {
+    font-size: 2.6rem !important;
+  }
+
+  .services-hero {
+    height: 300px !important;
+  }
+
+  #hero-content {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    height: 350px;
+  }
+
+  #hero-content button {
+    width: 160px !important;
+    padding: 15px 25px !important;
+    margin-top: 4rem !important;
+  }
+
+  .services-hero {
+    height: 240px !important;
+  }
+
+  #hero-content {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+}
+
+#hero-content button {
+  background-color: #daa520;
+  color: white;
+  font-size: 1.4rem;
+  padding: 30px 40px;
+  text-transform: uppercase;
+  width: 270px;
+  margin-top: 8rem;
+}
+
+#welcome-section {
+  width: 100%;
+  /* position: relative; */
+  /* top: 545px; */
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+#welcome-section > div {
+  height: 100%;
+  padding: 24px;
+  padding-top: 36px;
+}
+
+#welcome-section > div > div {
+  width: 100%;
+  margin: 36px auto;
+}
+
+#welcome-section hr {
+  width: 50%;
+  margin: 32px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(52, 52, 52, 0.27);
+}
+
+/* #welcome-section img {
+  width: 200px;
+  height: 200px;
+  background-image: url("./assets/img/golden-roads-welcome.jpg");
+  background-position: center;
+  background-size: cover;
+} */
+
+#welcome-section p {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.section-title {
+  font-size: 4.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(62, 70, 78);
+  margin-bottom: 5rem;
+}
+
+#contact-section > div {
+  height: 100%;
+  bottom: 0;
+}
+
+#contact-section h2 {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat, sans-serif;
+}
+
+#contact-section button {
+  background-color: #daa520;
+}
+
+#services-section {
+  /* position: relative;
+  top: 545px; */
+  padding-bottom: 6rem;
+}
+
+#services-section > div {
+  margin: 32px auto;
+}
+
+#services-heading {
+  font-size: 4.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(62, 70, 78);
+  margin-bottom: 5rem;
+}
+
+#services-section > div > hr {
+  /*margin-right:0;*/
+  /*text-align:right;*/
+  width: 30%;
+  margin: 28px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(52, 52, 52, 0.09);
+  margin-bottom: 38px;
+}
+
+#services-section > div > div {
+  font-family: Montserrat, sans-serif;
+  margin-top: 0px;
+}
+
+#services-section img {
+  width: 9rem;
+  height: 9rem;
+}
+
+#services-section h4 {
+  margin-bottom: 0;
+  font-size: 2.3rem;
+  margin-top: 4rem;
+}
+
+.services-hero {
+  width: 100%;
+  height: 350px;
+  background-image: url("./assets/img/Finance-GettyImages.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-body > hr {
+  background-color: rgba(167, 167, 167, 0.29);
+}
+
+.card-body > button {
+  background-color: #daa520;
+}
+
+#footer-dark {
+  background-image: url("./assets/img/5-0_finance_1600.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: relative;
+  top: 545px; */
+}
+p {
+  line-height: 1.8;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.golden {
+  color: #daa520;
+}
+nav {
+  background-color: rgb(21, 22, 23);
+}
+#navcol-1 {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.contact-clean {
+  background: #f1f7fc;
+  padding: 80px 0;
+}
+
+@media (max-width: 767px) {
+  .contact-clean {
+    padding: 20px 0;
+  }
+}
+
+.contact-clean form {
+  max-width: 480px;
+  width: 90%;
+  margin: 0 auto;
+  /*background-color:#ffffff;*/
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  /*box-shadow:1px 1px 5px rgba(0,0,0,0.1);*/
+}
+
+@media (max-width: 767px) {
+  .contact-clean form {
+    padding: 30px;
+  }
+}
+
+.contact-clean h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 36px;
+  color: inherit;
+}
+
+.contact-clean .form-group:last-child {
+  margin-bottom: 5px;
+}
+
+.contact-clean form .form-control {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  outline: none;
+  color: inherit;
+  padding-left: 12px;
+  height: 42px;
+}
+
+.contact-clean form .form-control:focus {
+  border: 1px solid #b2b2b2;
+}
+
+.contact-clean form textarea.form-control {
+  min-height: 100px;
+  max-height: 260px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.contact-clean form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none !important;
+}
+
+.contact-clean form .btn:hover {
+  opacity: 1;
+}
+
+.contact-clean form .btn:active {
+  transform: translateY(1px);
+}
+
+.contact-clean form .btn-primary {
+  /*background-color:#055ada !important;*/
+  margin-top: 15px;
+  color: #fff;
+}
+
+.footer-dark {
+  /*padding:50px 0;*/
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.7;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* .about-header {
+  width: 100%;
+  height: 240px;
+  background-image: url("./assets/img/bitcoin-cryptocurrency-security.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */

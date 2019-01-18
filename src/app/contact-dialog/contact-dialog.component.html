@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Send us a message</h1>
+<div mat-dialog-content>
+  <div *ngIf="successMessage" class="alert alert-success" role="alert">
+    {{successMessage}}
+  </div>
+  <div *ngIf="errors && errors.failure" class="alert alert-danger" role="alert">
+    {{errors.failure}}
+  </div>
+  <form #contactForm="ngForm">
+    <mat-form-field appearance="outline">
+      <input matInput name="name" ngModel type="text" required placeholder="Name" #nameInput="ngModel">
+      <mat-error *ngIf="errors && errors.name">{{errors.name}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input matInput name="email" ngModel type="email" required email placeholder="Email" #emailInput="ngModel">
+      <mat-error *ngIf="errors && errors.email">{{errors.email}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <textarea matInput rows="6" name="message" ngModel required placeholder="Message"></textarea>
+      <mat-error *ngIf="errors && errors.message">{{errors.message}}</mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onMessageSent(contactForm)" cdkFocusInitial mat-raised-button>Send</button>
+  <button mat-button mat-dialog-close>Cancel</button>
+</div>

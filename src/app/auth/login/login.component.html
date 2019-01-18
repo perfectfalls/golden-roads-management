@@ -1,0 +1,24 @@
+<div class="login-hero">
+  <div class="dark-overlay"></div>
+</div>
+<mat-card>
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+    {{errorMessage}}
+  </div>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form (submit)="onLogin()" [formGroup]="form" *ngIf="!isLoading">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" placeholder="Email">
+      <mat-error *ngIf="!form.get('email').valid && form.get('email').touched"><span *ngIf="form.get('email').errors['required']">Email
+          address required</span><span *ngIf="form.get('email').errors['email']">Invalid email address!</span></mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" placeholder="Password">
+      <mat-error *ngIf="!form.get('password').valid && form.get('password').touched"><span *ngIf="form.get('password').errors['required']">Password
+          is required!</span></mat-error>
+    </mat-form-field>
+    <button mat-raised-button type="submit" style="background-color: #daa520; color: white;">Login</button>
+  </form>
+</mat-card>

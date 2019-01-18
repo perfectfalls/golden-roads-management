@@ -1,0 +1,24 @@
+.blackening {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.active-link {
+  color: #daa520 !important;
+}
+
+a:hover {
+  color: #daa520 !important;
+}
+
+.container img {
+  height: 48px;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}

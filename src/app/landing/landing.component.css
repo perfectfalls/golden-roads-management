@@ -1,0 +1,68 @@
+.card {
+  border: 1px solid #daa520;
+}
+
+.card-body {
+  padding: 2.8rem;
+}
+/* 
+@media (max-width: 768px) {
+  .card-group {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+.members {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  width: 45%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team {
+  background-color: #e0e0e0;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+mat-card-title {
+  font-weight: bold;
+  color: #515356;
+}
+
+@media (max-width: 768px) {
+  .members {
+    flex-direction: column;
+  }
+
+  .member {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.pierre-header-image {
+  background-image: url("../../assets/img/pierre_photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.irakli-header-image {
+  background-image: url("../../assets/img/irakli_photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.promth-header-image {
+  background-image: url("../../assets/img/promyth_photo.jpg");
+  background-size: cover;
+  background-position: right;
+}
